@@ -5,8 +5,8 @@ function App() {
     <div className='App'>
       <iframe
         title='hangdeh'
-        src={'http://localhost:8000/video'}
-        allow='accelerometer, autoplay; encrypted-media; gyroscope; picture-in-picture'
+        src={process.env.REACT_APP_VIDEO_URL}
+        allow='accelerometer, autoplhttp://localhost:8000/videoay; encrypted-media; gyroscope; picture-in-picture'
         className='video-feed'
         allowFullScreen
       ></iframe>
